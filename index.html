@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Assignments Portfolio | Student Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --card: #ffffff;
+            --bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--dark);
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--primary), #4f46e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .tag.html {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .tag.js {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .tag.node {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .tag.react {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .tag.mern {
+            background: #f3e8ff;
+            color: #6b21a8;
+        }
+
+        h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            color: #64748b;
+            font-size: 0.95rem;
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        .link-text {
+            font-weight: 600;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Web Development Portfolio</h1>
+        <p>A collection of assignments demonstrating Full-Stack capabilities.</p>
+    </header>
+
+    <div class="grid">
+        <a href="Assignment_1/index.html" class="card">
+            <span class="tag html">Assignment 1</span>
+            <h2>Personal Blog Website</h2>
+            <p>Responsive multi-page website using HTML, CSS, and Bootstrap with Grid layouts.</p>
+            <div class="link-text">View Site &rarr;</div>
+        </a>
+
+        <a href="Assignment_2/index.html" class="card">
+            <span class="tag js">Assignment 2</span>
+            <h2>To-Do List App</h2>
+            <p>Interactive task manager with vanilla JavaScript, DOM manipulation, and Local Storage.</p>
+            <div class="link-text">View App &rarr;</div>
+        </a>
+
+        <!-- Note: Backend APIs cannot run on GitHub Pages directly, linking to code or README -->
+        <a href="https://github.com/Keysics/Assignments/tree/main/Assignment_3" target="_blank" class="card">
+            <span class="tag node">Assignment 3</span>
+            <h2>Blog Backend API</h2>
+            <p>Node.js & Express RESTful API with file-based persistence. (Backend Code Only)</p>
+            <div class="link-text">View Code on GitHub &rarr;</div>
+        </a>
+
+        <a href="Assignment_4/dist/index.html" class="card">
+            <span class="tag react">Assignment 4</span>
+            <h2>Weather Dashboard</h2>
+            <p>React + Vite application using Open-Meteo API for real-time weather data.</p>
+            <div class="link-text">View App &rarr;</div>
+        </a>
+
+        <!-- MERN Frontend can be shown if built -->
+        <a href="Assignment_5/frontend/dist/index.html" class="card">
+            <span class="tag mern">Assignment 5</span>
+            <h2>Enquiry System (Frontend)</h2>
+            <p>MERN Stack enquiry form. Note: Backend features won't work on static hosting.</p>
+            <div class="link-text">View App &rarr;</div>
+        </a>
+    </div>
+
+    <footer class="footer">
+        &copy; 2026 Student Name. HOSTED ON GITHUB PAGES.
+    </footer>
+</body>
+
+</html>
