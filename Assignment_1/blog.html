@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DeV Blog | All Articles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DeV.Log</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary-custom" href="#">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row mb-5 align-items-center">
+            <div class="col-md-6">
+                <h1 class="mb-0">All Articles</h1>
+                <p class="text-secondary">Exploring ideas one line of code at a time.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <input type="text" class="form-control form-control-lg rounded-pill ps-5"
+                        placeholder="Search articles...">
+                    <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Reuse cards for demo -->
+            <article class="blog-card fade-in" style="animation-delay: 0.1s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top" alt="Coding">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Web Development</span>
+                    <h3 class="card-title"><a href="article.html">Mastering CSS Grid</a></h3>
+                    <p class="card-text">A comprehensive guide to building complex layouts with ease.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card fade-in" style="animation-delay: 0.2s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top" alt="JS">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">JavaScript</span>
+                    <h3 class="card-title"><a href="article.html">The Event Loop Explained</a></h3>
+                    <p class="card-text">Understanding the asynchronous nature of JavaScript.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card fade-in" style="animation-delay: 0.3s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top" alt="Design">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Design</span>
+                    <h3 class="card-title"><a href="article.html">Typography in Web Design</a></h3>
+                    <p class="card-text">Why your font choice matters more than you think.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card fade-in" style="animation-delay: 0.4s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top" alt="Security">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Security</span>
+                    <h3 class="card-title"><a href="article.html">Web Security Basics</a></h3>
+                    <p class="card-text">Protecting your applications from common vulnerabilities.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card fade-in" style="animation-delay: 0.5s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top" alt="React">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">React</span>
+                    <h3 class="card-title"><a href="article.html">React Hooks Deep Dive</a></h3>
+                    <p class="card-text">Advanced patterns using useEffect and custom hooks.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card fade-in" style="animation-delay: 0.6s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80"
+                        class="card-img-top" alt="Backend">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Backend</span>
+                    <h3 class="card-title"><a href="article.html">RESTful API Design</a></h3>
+                    <p class="card-text">Best practices for building scalable APIs.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <nav aria-label="Page navigation" class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer class="text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3 class="fw-bold mb-3 text-white">DeV.Log</h3>
+                    <p class="text-secondary">Sharing knowledge and experiences in the world of software development.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="blog.html" class="footer-link">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p class="text-secondary small">&copy; 2026 DeV.Log</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

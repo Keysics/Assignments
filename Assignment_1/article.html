@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering CSS Grid | DeV.Log</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DeV.Log</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <article>
+        <header class="article-header text-center bg-light">
+            <div class="container">
+                <span class="badge bg-primary rounded-pill mb-3">Web Development</span>
+                <h1 class="display-4 fw-bold mb-3">Mastering CSS Grid in 2024</h1>
+                <div class="article-meta">
+                    <span class="me-3"><i class="far fa-user me-2"></i>Alex Dev</span>
+                    <span class="me-3"><i class="far fa-calendar me-2"></i>Jan 15, 2026</span>
+                    <span><i class="far fa-clock me-2"></i>5 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
+                        class="img-fluid rounded-4 shadow-sm mb-5 w-100" alt="Cover">
+
+                    <div class="article-content">
+                        <p class="lead">CSS Grid Layout is the most powerful layout system available in CSS. It is a
+                            2-dimensional system, meaning it can handle both columns and rows, unlike flexbox which is
+                            largely 1-dimensional.</p>
+
+                        <h3>Why CSS Grid?</h3>
+                        <p>Before Grid, we used tables, floats, positioning and inline-block, but all of these methods
+                            were essentially hacks and left out a lot of important functionality (vertical centering,
+                            for instance). Flexbox helped out, but it’s intended for simpler one-dimensional layouts.
+                        </p>
+
+                        <p>Grid is the very first CSS module created specifically to solve the layout problems we've all
+                            been hacking our way around for as long as we've been making websites.</p>
+
+                        <blockquote
+                            class="blockquote border-start border-4 border-primary ps-4 my-4 fst-italic bg-light p-3 rounded">
+                            "Grid makes it easy to design web pages without having to use floats and positioning."
+                        </blockquote>
+
+                        <h3>Basic Concepts</h3>
+                        <p>You apply CSS Grid to a container element. The direct children of that container become grid
+                            items. You can then define columns and rows using `grid-template-columns` and
+                            `grid-template-rows`.</p>
+
+                        <pre class="bg-dark text-light p-4 rounded-3 mb-4"><code>.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}</code></pre>
+
+                        <h3>Conclusion</h3>
+                        <p>This was just a scratching of the surface. CSS Grid allows for complex, responsive layouts
+                            with very little code compared to older methods. It's fully supported in all modern browsers
+                            and is a must-know for any web developer in 2026.</p>
+                    </div>
+
+                    <div class="mt-5 pt-5 border-top">
+                        <h4 class="mb-4">Comments</h4>
+                        <div class="bg-light p-4 rounded-3 text-center text-muted">
+                            <i class="far fa-comment-dots fa-2x mb-2"></i>
+                            <p>Comments are currently disabled for this archive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3 class="fw-bold mb-3 text-white">DeV.Log</h3>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p class="text-secondary small">&copy; 2026 DeV.Log</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

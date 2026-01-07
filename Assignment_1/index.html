@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DeV Blog | Home</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DeV.Log</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary-custom" href="#">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <div class="container fade-in">
+            <span class="badge bg-primary bg-opacity-10 text-primary mb-3 px-3 py-2 rounded-pill">Welcome to my space</span>
+            <h1>Exploring Code & Design</h1>
+            <p class="lead text-muted mb-4 mx-auto" style="max-width: 600px;">
+                A personal collection of articles, tutorials, and thoughts on web development, design systems, and modern technology.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#latest-posts" class="btn btn-primary-custom">Read Latest</a>
+                <button class="btn btn-outline-secondary rounded-pill px-4">View Portfolio</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Latest Posts -->
+    <section id="latest-posts" class="container mb-5">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <div>
+                <h6 class="text-primary fw-bold text-uppercase">Recent Updates</h6>
+                <h2>Latest Articles</h2>
+            </div>
+            <a href="blog.html" class="read-more">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Card 1 -->
+            <article class="blog-card fade-in" style="animation-delay: 0.1s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Coding Setup">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Web Development</span>
+                    <h3 class="card-title"><a href="article.html">Mastering CSS Grid in 2024</a></h3>
+                    <p class="card-text">A comprehensive guide to building complex layouts with ease using modern CSS Grid properties.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="blog-card fade-in" style="animation-delay: 0.2s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Code Screen">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">JavaScript</span>
+                    <h3 class="card-title"><a href="article.html">The Event Loop Explained</a></h3>
+                    <p class="card-text">Understanding the asynchronous nature of JavaScript and how the event loop actually works.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="blog-card fade-in" style="animation-delay: 0.3s;">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="UI Design">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Design</span>
+                    <h3 class="card-title"><a href="article.html">Typography in Web Design</a></h3>
+                    <p class="card-text">Why your font choice matters more than you think and how to pick the perfect pairing.</p>
+                    <a href="article.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3 class="fw-bold mb-3 text-white">DeV.Log</h3>
+                    <p class="text-secondary">Sharing knowledge and experiences in the world of software development.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="blog.html" class="footer-link">Articles</a></li>
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-secondary small">Subscribe to get the latest updates.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control rounded-pill" placeholder="Email address">
+                        <button class="btn btn-primary-custom py-2 px-3">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-4 mt-4 text-center text-secondary">
+                <small>&copy; 2026 DeV.Log Personal Blog. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
