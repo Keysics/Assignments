@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Welcome to my Blog",
+    "content": "This is the first post in my new blog API.",
+    "author": "Admin",
+    "date": "2026-01-01"
+  },
+  {
+    "id": 2,
+    "title": "Learning Node.js",
+    "content": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.",
+    "author": "Student",
+    "date": "2026-01-05"
+  }
+]
